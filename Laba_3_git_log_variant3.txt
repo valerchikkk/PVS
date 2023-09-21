@@ -1,0 +1,35 @@
+Задание:
+Вывести все коммиты, в сообщении которых присутствует слово my.
+Решение:
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git log --grep="my"
+commit 6496870830c925a804281e2e2346f48594198da5 (HEAD -> main, origin/main, origin/HEAD)
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 13:15:55 2023 +0300
+
+    Переименовал my_second_file.txt на my_first_file.txt
+
+commit 93d96dda390ad71b8734db63b9a3acbe6594d21b
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 13:08:05 2023 +0300
+
+    Удалён файл my_first_file.txt
+
+commit 3aae566971dae98f4c4b703a1579f97d32fde662
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 12:33:05 2023 +0300
+
+    Добавлена строка 'row to index' в файл my_first_file.txt
+
+commit d6dc149ca8d619ffc0d5d6384a1a5eb9678bd4b9
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 12:04:59 2023 +0300
+
+    my second file
+
+commit 0f99a61f6120faabbe225e7e7f7554551fba77b7
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 12:02:25 2023 +0300
+
+    my first file
+(END)
