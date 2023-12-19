@@ -28,7 +28,7 @@
 
 Если вы хотите посмотреть график погоды на пять дней, отправьте боту "2" и в следующем сообщении укажите свой город. Бот сформирует для вас график.
 
-![График погоды]([C:\Users\val\Desktop\BOTik\plot.JPG](https://github.com/valerchikkk/PVS/blob/main/CHATBOT/plot.JPG))
+![График погоды](https://github.com/valerchikkk/PVS/blob/main/CHATBOT/plot.JPG))
 
 ## Мониторинг погоды
 
