@@ -1,0 +1,118 @@
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git add 1.txt
+
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git commit -m "add 1.txt file"
+[main 9f3c8fb] add 1.txt file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git add 2.txt
+
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git add 3.txt
+
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git reset 2.txt
+
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git commit --amend -m "add 1.txt and 3.txt"
+[main a9a1204] add 1.txt and 3.txt
+ Date: Thu Sep 21 11:05:33 2023 +0300
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.txt
+ create mode 100644 3.txt
+
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git tag -a v0.01 -m "Version 0.01"
+
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git log
+commit a9a1204b01f53f735413617d8faed29b210e96b4 (HEAD -> main, tag: v0.01)
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 21 11:05:33 2023 +0300
+
+    add 1.txt and 3.txt
+
+commit cdcf8461218668d30cb2d5411c255bc4ce7586c3 (origin/main, origin/HEAD)
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 21 10:51:28 2023 +0300
+
+    Выполнена лабораторная номер 3
+
+commit 6496870830c925a804281e2e2346f48594198da5
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 13:15:55 2023 +0300
+
+    Переименовал my_second_file.txt на my_first_file.txt
+
+commit 93d96dda390ad71b8734db63b9a3acbe6594d21b
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 13:08:05 2023 +0300
+
+    Удалён файл my_first_file.txt
+
+commit 3aae566971dae98f4c4b703a1579f97d32fde662
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 12:33:05 2023 +0300
+
+    Добавлена строка 'row to index' в файл my_first_file.txt
+
+commit 17d5d175e94fe17a03d2b892a8a6f9f737ecab28
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 12:23:16 2023 +0300
+
+    Добавлен файл .gitignore с правилами игнорирования
+
+commit d6dc149ca8d619ffc0d5d6384a1a5eb9678bd4b9
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 12:04:59 2023 +0300
+
+    my second file
+
+commit 0f99a61f6120faabbe225e7e7f7554551fba77b7
+Author: Valeriy Punantsev <valeriypunantsev@gmail.com>
+Date:   Thu Sep 14 12:02:25 2023 +0300
+
+    my first file
+
+commit 354201beb8cf155b1c9d1cea22fb84bbfd8f2e01
+Author: Kirill Butin <48083926+KirillButin@users.noreply.github.com>
+Date:   Wed Oct 19 21:04:17 2022 +0300
+
+    Update README.md
+
+commit d0e87cccd874fc09e21eba6ca9239d846c4fed8d
+Author: Kirill Butin <48083926+KirillButin@users.noreply.github.com>
+Date:   Wed Oct 19 13:29:42 2022 +0300
+
+    добавил задания
+
+commit 5b0cc71d1b5f61047bb34358ba473aa979b315f6
+Author: Kirill Butin <48083926+KirillButin@users.noreply.github.com>
+Date:   Wed Oct 19 13:28:35 2022 +0300
+
+    Update README.md
+
+commit 5111f1222bfe61e9a930d05283fe443c4ab29c17
+Author: Kirill Butin <48083926+KirillButin@users.noreply.github.com>
+Date:   Wed Oct 19 13:15:25 2022 +0300
+
+    Initial commit
+
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git tag v0.02 0f99a61f6120faabbe225e7e7f7554551fba77b7
+
+val@DESKTOP-41TPAEC MINGW64 /d/PVS (main)
+$ git push --tags
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 387 bytes | 387.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/valerchikkk/PVS.git
+ * [new tag]         v0.01 -> v0.01
+ * [new tag]         v0.02 -> v0.02
